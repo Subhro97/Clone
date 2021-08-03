@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>FaceBook Post</title>
+  </head>
+  <body>
+    <div class="post">
+      <div class="header">
+        <div class="c-1">
+          <i class="fas fa-pen"></i>
+          <div id="p-1">Compose Post</div>
+        </div>
+        <div class="c-2">
+          <i class="fas fa-photo-video"></i>
+          <div id="p-2">Photo/Video Album</div>
+        </div>
+        <div class="c-3">
+          <i class="fas fa-video"></i>
+          <div id="p-3">Live Video</div>
+        </div>
+        <i class="fas fa-times cross"></i>
+      </div>
+      <div class="content">
+        <div class="content-inner">
+          <i class="fas fa-user-circle fa-2x user"></i>
+          <textarea
+            class="text"
+            rows="4"
+            cols="68"
+            placeholder="Write Something Here..."
+            onfocus="this.placeholder=''"
+            onblur="this.placeholder='Write Something Here...'"
+          ></textarea>
+          <i class="fas fa-chevron-circle-left arrow"></i>
+          <i class="fas fa-bars menu"></i>
+          <i class="fas fa-laugh emo"></i>
+        </div>
+      </div>
+      <div class="large-gif">
+        <div class="r-1">
+          <div class="tag-friends">
+            <i class="fas fa-user-tag tag"></i>
+            <div id="tag">Tag friends</div>
+          </div>
+          <div class="check-in">
+            <i class="fas fa-map-marker-alt check"></i>
+            <div id="check">Check in</div>
+          </div>
+        </div>
+        <div class="r-2">
+          <div class="gif">
+            <i class="fas fa-portrait gif-icon"></i>
+            <div id="gif">GIF</div>
+          </div>
+          <div class="tag-events">
+            <div class="tag-e">
+              <i class="fas fa-calendar-alt tag-ev"></i>
+              <div id="tag-e">Tag Event</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="buttons">
+        <button id="only">
+          <i class="fas fa-lock lock"></i>Only me
+          <i class="fas fa-sort-down d-arrow"></i>
+        </button>
+        <button id="post">Post</button>
+      </div>
+    </div>
+    <script src="index.js" defer></script>
+  </body>
+</html>
